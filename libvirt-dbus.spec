@@ -8,7 +8,7 @@ Summary:	libvirt D-Bus API binding
 Summary(pl.UTF-8):	API D-Bus do libvirt
 Name:		libvirt-dbus
 Version:	1.4.0
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	https://libvirt.org/sources/dbus/%{name}-%{version}.tar.xz
@@ -23,8 +23,8 @@ BuildRequires:	python3-docutils
 BuildRequires:	rpmbuild(macros) >= 1.736
 Requires:	dbus
 Requires:	glib2 >= %{glib2_ver}
+Requires:	libvirt >= %{libvirt_ver}
 Requires:	libvirt-glib >= %{libvirt_glib_ver}
-Requires:	libvirt-libs >= %{libvirt_ver}
 Requires:	polkit
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
