@@ -7,12 +7,12 @@
 Summary:	libvirt D-Bus API binding
 Summary(pl.UTF-8):	API D-Bus do libvirt
 Name:		libvirt-dbus
-Version:	1.4.0
-Release:	2
+Version:	1.4.1
+Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	https://libvirt.org/sources/dbus/%{name}-%{version}.tar.xz
-# Source0-md5:	2fb11a73d7da59bf0e81c44c877fbcde
+# Source0-md5:	f1d2507c7d73eb0920e4bda05a68f831
 URL:		https://libvirt.org/
 BuildRequires:	glib2-devel >= %{glib2_ver}
 BuildRequires:	libvirt-devel >= %{libvirt_ver}
@@ -59,4 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/dbus-1/system.d/org.libvirt.conf
 %{_datadir}/dbus-1/interfaces/org.libvirt.*.xml
 %{_datadir}/polkit-1/rules.d/libvirt-dbus.rules
+%{systemdunitdir}/libvirt-dbus.service
+%{systemduserunitdir}/libvirt-dbus.service
 %{_mandir}/man8/libvirt-dbus.8*
