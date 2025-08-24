@@ -20,7 +20,7 @@ BuildRequires:	libvirt-glib-devel >= %{libvirt_glib_ver}
 BuildRequires:	meson >= 0.49.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	python3-docutils
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 Requires:	dbus
 Requires:	glib2 >= %{glib2_ver}
 Requires:	libvirt >= %{libvirt_ver}
